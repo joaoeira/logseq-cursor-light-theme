@@ -1,0 +1,473 @@
+/*
+ * Cursor Light for Logseq
+ *
+ * Palette adapted from Cursor Light v1.0.0:
+ * /Applications/Cursor.app/Contents/Resources/app/extensions/theme-cursor/
+ */
+
+:root {
+  --cursor-editor: #fcfcfc;
+  --cursor-chrome: #f3f3f3;
+  --cursor-line: #eaeaea;
+  --cursor-text: #141414;
+  --cursor-text-74: rgba(20, 20, 20, 0.74);
+  --cursor-text-60: rgba(20, 20, 20, 0.6);
+  --cursor-text-36: rgba(20, 20, 20, 0.36);
+  --cursor-text-20: rgba(20, 20, 20, 0.2);
+  --cursor-text-14: rgba(20, 20, 20, 0.14);
+  --cursor-text-12: rgba(20, 20, 20, 0.12);
+  --cursor-text-8: rgba(20, 20, 20, 0.08);
+  --cursor-text-6: rgba(20, 20, 20, 0.06);
+  --cursor-blue: #2778c1;
+  --cursor-blue-hover: #246aab;
+  --cursor-link: #0064b0;
+  --cursor-link-dark: #005293;
+  --cursor-teal: #3b7e84;
+  --cursor-green: #007041;
+  --cursor-orange: #cd4500;
+  --cursor-yellow: #a46700;
+  --cursor-red: #be1744;
+  --cursor-red-dark: #a30034;
+  --cursor-purple: #7565cc;
+  --cursor-purple-dark: #654dc0;
+  --cursor-magenta: #92156a;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+
+  /* Logseq surfaces */
+  --ls-primary-background-color: var(--cursor-editor);
+  --ls-secondary-background-color: var(--cursor-chrome);
+  --ls-tertiary-background-color: var(--cursor-line);
+  --ls-quaternary-background-color: var(--cursor-text-8);
+  --color-level-1: var(--cursor-chrome);
+  --color-level-2: var(--cursor-line);
+  --color-level-3: var(--cursor-text-8);
+  --color-level-4: var(--cursor-text-12);
+  --color-level-5: var(--cursor-text-14);
+  --color-level-6: var(--cursor-text-20);
+
+  /* Logseq text and interaction */
+  --ls-primary-text-color: var(--cursor-text);
+  --ls-secondary-text-color: var(--cursor-text-74);
+  --ls-title-text-color: var(--cursor-text);
+  --ls-link-text-color: var(--cursor-link);
+  --ls-link-text-hover-color: var(--cursor-link-dark);
+  --ls-link-ref-text-color: var(--cursor-link-dark);
+  --ls-link-ref-text-hover-color: var(--cursor-link);
+  --ls-tag-text-color: var(--cursor-teal);
+  --ls-tag-text-hover-color: var(--cursor-link-dark);
+  --ls-active-primary-color: var(--cursor-blue);
+  --ls-active-secondary-color: var(--cursor-blue-hover);
+  --ls-icon-color: var(--cursor-text-60);
+  --ls-search-icon-color: var(--cursor-text-60);
+  --ls-border-color: var(--cursor-text-12);
+  --ls-secondary-border-color: var(--cursor-text-8);
+  --ls-tertiary-border-color: var(--cursor-text-6);
+  --ls-guideline-color: var(--cursor-text-12);
+  --ls-menu-hover-color: var(--cursor-text-8);
+  --ls-block-highlight-color: var(--cursor-line);
+  --ls-selection-background-color: var(--cursor-text-14);
+  --ls-selection-text-color: var(--cursor-text);
+  --ls-focus-ring-color: var(--cursor-text-20);
+  --ls-left-sidebar-active-background: var(--cursor-text-8);
+  --ls-header-button-background: var(--cursor-text);
+
+  /* Blocks and prose */
+  --ls-block-bullet-color: var(--cursor-text-36);
+  --ls-block-bullet-border-color: var(--cursor-text-20);
+  --ls-block-properties-background-color: var(--cursor-chrome);
+  --ls-page-properties-background-color: var(--cursor-chrome);
+  --ls-page-inline-code-color: var(--cursor-green);
+  --ls-page-inline-code-bg-color: var(--cursor-line);
+  --ls-page-blockquote-color: var(--cursor-text-74);
+  --ls-page-blockquote-bg-color: var(--cursor-chrome);
+  --ls-page-blockquote-border-color: var(--cursor-text-20);
+  --ls-page-checkbox-color: var(--cursor-blue);
+  --ls-page-checkbox-border-color: var(--cursor-text-20);
+  --ls-cloze-text-color: var(--cursor-purple-dark);
+  --ls-head-text-color: var(--cursor-text);
+  --ls-a-chosen-bg: var(--cursor-text-8);
+  --ls-right-sidebar-code-bg-color: var(--cursor-chrome);
+
+  /* Feedback */
+  --ls-error-color: var(--cursor-red);
+  --ls-warning-color: var(--cursor-orange);
+  --ls-success-color: var(--cursor-green);
+  --ls-error-text-color: var(--cursor-red);
+  --ls-warning-text-color: #8b5700;
+  --ls-success-text-color: var(--cursor-green);
+  --ls-error-background-color: #fce6ea;
+  --ls-warning-background-color: #f6ecd9;
+  --ls-success-background-color: #dff3e9;
+
+  /* Scrollbars */
+  --ls-scrollbar-foreground-color: var(--cursor-text-14);
+  --ls-scrollbar-background-color: transparent;
+  --ls-scrollbar-thumb-hover-color: var(--cursor-text-20);
+
+  /* Current DB-version component tokens */
+  --background: 0 0% 99%;
+  --foreground: 0 0% 8%;
+  --card: 0 0% 99%;
+  --card-foreground: 0 0% 8%;
+  --popover: 0 0% 95%;
+  --popover-foreground: 0 0% 8%;
+  --primary: 209 66% 45%;
+  --primary-foreground: 0 0% 99%;
+  --secondary: 0 0% 95%;
+  --secondary-foreground: 0 0% 8%;
+  --muted: 0 0% 95%;
+  --muted-foreground: 0 0% 38%;
+  --accent: 0 0% 92%;
+  --accent-foreground: 0 0% 8%;
+  --destructive: 344 79% 42%;
+  --destructive-foreground: 0 0% 99%;
+  --border: 0 0% 88%;
+  --input: 0 0% 80%;
+  --ring: 0 0% 20%;
+  --radius: 6px;
+
+  /* Logseq accent scale. Cursor's action blue is step 9. */
+  --lx-gray-01: var(--cursor-editor);
+  --lx-accent-01: #f5f9fd;
+  --lx-accent-02: #edf5fb;
+  --lx-accent-03: #dcecf8;
+  --lx-accent-04: #c8e1f4;
+  --lx-accent-05: #add2ed;
+  --lx-accent-06: #8bbde1;
+  --lx-accent-07: #62a2d3;
+  --lx-accent-08: #3d89c8;
+  --lx-accent-09: var(--cursor-blue);
+  --lx-accent-10: var(--cursor-blue-hover);
+  --lx-accent-11: var(--cursor-link);
+  --lx-accent-12: #003b69;
+}
+
+html[data-theme="light"],
+html[data-theme="light"] body,
+html[data-theme="light"] #app-container,
+html[data-theme="light"] #left-container {
+  background: var(--cursor-editor);
+  color: var(--cursor-text);
+}
+
+html[data-theme="light"] ::selection {
+  color: var(--cursor-text);
+  background: var(--cursor-text-14);
+}
+
+html[data-theme="light"] a {
+  color: var(--cursor-link);
+}
+
+html[data-theme="light"] a:hover {
+  color: var(--cursor-link-dark);
+}
+
+/* Cursor's activity bar and side bar share the same quiet chrome. */
+html[data-theme="light"] #left-sidebar,
+html[data-theme="light"] .cp__sidebar-left-layout,
+html[data-theme="light"] .left-sidebar-inner,
+html[data-theme="light"] .cp__header,
+html[data-theme="light"] .cp__right-sidebar-topbar {
+  color: var(--cursor-text-74);
+  background: var(--cursor-chrome);
+}
+
+html[data-theme="light"] #left-sidebar {
+  border-right: 1px solid var(--cursor-text-8);
+}
+
+html[data-theme="light"] .cp__header {
+  border-bottom: 1px solid var(--cursor-text-8);
+}
+
+html[data-theme="light"] .left-sidebar-inner a,
+html[data-theme="light"] .left-sidebar-inner button {
+  color: var(--cursor-text-74);
+}
+
+html[data-theme="light"] .left-sidebar-inner a.item:hover,
+html[data-theme="light"] .left-sidebar-inner button:hover,
+html[data-theme="light"] .cp__header a:hover,
+html[data-theme="light"] .cp__header button:hover {
+  color: var(--cursor-text);
+  background: var(--cursor-text-8);
+}
+
+html[data-theme="light"] .left-sidebar-inner a.item.active {
+  color: var(--cursor-text);
+  background: var(--cursor-text-8);
+}
+
+/* Right-sidebar items behave like Cursor editor groups. */
+html[data-theme="light"] #right-sidebar,
+html[data-theme="light"] #right-sidebar-container,
+html[data-theme="light"] .cp__right-sidebar-scrollable {
+  background: var(--cursor-chrome);
+}
+
+html[data-theme="light"] .sidebar-item {
+  color: var(--cursor-text);
+  background: var(--cursor-editor);
+  border-color: var(--cursor-text-8);
+}
+
+html[data-theme="light"] .sidebar-item .sidebar-item-header {
+  color: var(--cursor-text-74);
+  background: var(--cursor-chrome);
+  border-color: var(--cursor-text-8);
+}
+
+/* Horizontal Panes integration: neutral focused-group treatment from Cursor. */
+html[data-theme="light"] body.horizontal-panes-active .sidebar-item-list {
+  background: var(--cursor-chrome) !important;
+}
+
+html[data-theme="light"]
+  body.horizontal-panes-active
+  .sidebar-item-list
+  > .sidebar-item {
+  background: var(--cursor-editor);
+  border-color: var(--cursor-text-12);
+  box-shadow: 0 8px 24px rgba(20, 20, 20, 0.08);
+}
+
+html[data-theme="light"]
+  body.horizontal-panes-active
+  .sidebar-item-list
+  > .sidebar-item.horizontal-panes-active-pane {
+  border-color: var(--cursor-text-20);
+  box-shadow:
+    0 0 0 1px var(--cursor-text-8),
+    0 8px 24px rgba(20, 20, 20, 0.1);
+}
+
+html[data-theme="light"]
+  body.horizontal-panes-active
+  .sidebar-item
+  .sidebar-item-header {
+  background: rgba(243, 243, 243, 0.94) !important;
+}
+
+/* Outliner */
+html[data-theme="light"] .page-title,
+html[data-theme="light"] .page-title .title,
+html[data-theme="light"] .ls-block :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--cursor-text);
+}
+
+html[data-theme="light"] .page-reference,
+html[data-theme="light"] .block-ref {
+  color: var(--cursor-link-dark);
+}
+
+html[data-theme="light"] .tag,
+html[data-theme="light"] .tagged-node-ref {
+  color: var(--cursor-teal);
+  background: var(--cursor-text-6);
+  border-color: var(--cursor-text-8);
+}
+
+html[data-theme="light"] .bullet-container .bullet {
+  background: var(--cursor-text-36);
+  box-shadow: 0 0 0 1px transparent;
+}
+
+html[data-theme="light"] .bullet-container:hover .bullet {
+  background: var(--cursor-blue);
+  box-shadow: 0 0 0 3px var(--cursor-text-8);
+}
+
+html[data-theme="light"] .block-children-left-border {
+  background: var(--cursor-text-8);
+}
+
+html[data-theme="light"] .block-children-left-border:hover {
+  background: var(--cursor-text-20);
+}
+
+html[data-theme="light"] .block-content:focus-within,
+html[data-theme="light"] .ls-block.selected {
+  background: var(--cursor-text-6);
+}
+
+html[data-theme="light"] textarea,
+html[data-theme="light"] input,
+html[data-theme="light"] [contenteditable="true"] {
+  color: var(--cursor-text);
+  caret-color: var(--cursor-text);
+}
+
+html[data-theme="light"] textarea::placeholder,
+html[data-theme="light"] input::placeholder {
+  color: var(--cursor-text-36);
+}
+
+html[data-theme="light"] blockquote {
+  color: var(--cursor-text-74);
+  background: var(--cursor-chrome);
+  border-left-color: var(--cursor-text-20);
+}
+
+html[data-theme="light"] :not(pre) > code {
+  color: var(--cursor-green);
+  background: var(--cursor-line);
+  border: 1px solid var(--cursor-text-8);
+}
+
+html[data-theme="light"] hr {
+  border-color: var(--cursor-text-8);
+}
+
+html[data-theme="light"] mark {
+  color: #8b5700;
+  background: #f6ecd9;
+}
+
+/* Inputs, menus, dialogs, and tables */
+html[data-theme="light"] :is(input, textarea, select, .form-input) {
+  border-color: var(--cursor-text-20);
+  background-color: var(--cursor-editor);
+}
+
+html[data-theme="light"]
+  :is(input, textarea, select, .form-input):focus-visible {
+  border-color: var(--cursor-text-20);
+  outline: 1px solid var(--cursor-text-20);
+  box-shadow: none;
+}
+
+/* Editing a block must preserve Logseq's native typography and geometry. */
+html[data-theme="light"] .block-editor textarea,
+html[data-theme="light"] .editor-inner textarea,
+html[data-theme="light"] textarea.uniline-block {
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="light"]
+  :is(.ui__modal-panel, .dropdown-wrapper, .menu-links-wrapper, [role="menu"]) {
+  color: var(--cursor-text);
+  background: var(--cursor-chrome);
+  border: 1px solid var(--cursor-text-12);
+  box-shadow: 0 8px 24px rgba(20, 20, 20, 0.14);
+}
+
+html[data-theme="light"] :is(.menu-link, [role="menuitem"]):hover {
+  color: var(--cursor-text);
+  background: var(--cursor-text-8);
+}
+
+html[data-theme="light"] :is(.ui__button, button.ui__button)[intent="logseq"] {
+  color: var(--cursor-editor);
+  background: var(--cursor-blue);
+}
+
+html[data-theme="light"]
+  :is(.ui__button, button.ui__button)[intent="logseq"]:hover {
+  color: var(--cursor-editor);
+  background: var(--cursor-blue-hover);
+}
+
+html[data-theme="light"] table {
+  border-color: var(--cursor-text-8);
+}
+
+html[data-theme="light"] :is(th, td) {
+  border-color: var(--cursor-text-8);
+}
+
+html[data-theme="light"] tbody tr:nth-child(even) {
+  background: var(--cursor-text-6);
+}
+
+/* Code blocks: Cursor Light's TextMate palette mapped to highlight.js. */
+html[data-theme="light"] :is(pre, .hljs) {
+  color: var(--cursor-text);
+  background: var(--cursor-chrome);
+  border-color: var(--cursor-text-8);
+}
+
+html[data-theme="light"] .hljs-comment,
+html[data-theme="light"] .hljs-quote {
+  color: var(--cursor-text-60);
+  font-style: italic;
+}
+
+html[data-theme="light"] .hljs-string,
+html[data-theme="light"] .hljs-regexp {
+  color: var(--cursor-purple);
+}
+
+html[data-theme="light"] .hljs-number,
+html[data-theme="light"] .hljs-literal {
+  color: var(--cursor-magenta);
+}
+
+html[data-theme="light"] .hljs-keyword,
+html[data-theme="light"] .hljs-selector-tag,
+html[data-theme="light"] .hljs-meta {
+  color: var(--cursor-red-dark);
+}
+
+html[data-theme="light"] .hljs-title,
+html[data-theme="light"] .hljs-section,
+html[data-theme="light"] .hljs-built_in {
+  color: var(--cursor-orange);
+}
+
+html[data-theme="light"] .hljs-type,
+html[data-theme="light"] .hljs-class .hljs-title,
+html[data-theme="light"] .hljs-variable.language_ {
+  color: var(--cursor-link-dark);
+}
+
+html[data-theme="light"] .hljs-attr,
+html[data-theme="light"] .hljs-property,
+html[data-theme="light"] .hljs-params {
+  color: var(--cursor-purple-dark);
+}
+
+html[data-theme="light"] .hljs-tag,
+html[data-theme="light"] .hljs-name,
+html[data-theme="light"] .hljs-selector-class,
+html[data-theme="light"] .hljs-selector-id {
+  color: var(--cursor-green);
+}
+
+html[data-theme="light"] .hljs-symbol,
+html[data-theme="light"] .hljs-bullet,
+html[data-theme="light"] .hljs-link {
+  color: var(--cursor-link);
+}
+
+html[data-theme="light"] .hljs-deletion {
+  color: var(--cursor-red-dark);
+  background: #fce6ea;
+}
+
+html[data-theme="light"] .hljs-addition {
+  color: var(--cursor-green);
+  background: #dff3e9;
+}
+
+html[data-theme="light"] * {
+  scrollbar-color: var(--cursor-text-14) transparent;
+}
+
+html[data-theme="light"] *::-webkit-scrollbar-thumb {
+  background: var(--cursor-text-14);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+
+html[data-theme="light"] *::-webkit-scrollbar-thumb:hover {
+  background: var(--cursor-text-20);
+  background-clip: padding-box;
+}

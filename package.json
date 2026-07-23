@@ -1,0 +1,31 @@
+{
+  "name": "logseq-cursor-light-theme",
+  "version": "0.1.0",
+  "description": "A precise Logseq adaptation of Cursor Light.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node scripts/check-theme.mjs"
+  },
+  "keywords": [
+    "logseq",
+    "theme",
+    "cursor",
+    "light"
+  ],
+  "author": "Joao Eira",
+  "license": "MIT",
+  "logseq": {
+    "id": "logseq-cursor-light-theme",
+    "title": "Cursor Light",
+    "description": "Cursor Light's quiet editor, chrome, and syntax palette for Logseq.",
+    "themes": [
+      {
+        "name": "Cursor Light",
+        "url": "./cursor-light.css",
+        "description": "A Logseq adaptation of Cursor Light",
+        "mode": "light"
+      }
+    ]
+  },
+  "effect": false
+}
