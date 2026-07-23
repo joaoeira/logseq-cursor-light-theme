@@ -264,6 +264,12 @@ html[data-theme="light"] .block-ref {
   color: var(--cursor-link-dark);
 }
 
+/* Translucent surfaces let nested block embeds accumulate visual depth. */
+html[data-theme="light"] .ls-block[originalblockid] {
+  background: var(--cursor-text-6);
+  border-radius: var(--radius);
+}
+
 html[data-theme="light"] .tag,
 html[data-theme="light"] .tagged-node-ref {
   color: var(--cursor-teal);

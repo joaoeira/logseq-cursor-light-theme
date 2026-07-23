@@ -54,6 +54,11 @@ assert.match(css, /html\[data-theme="light"\]/);
 assert.match(css, /\.horizontal-panes-active/);
 assert.match(
   css,
+  /\.ls-block\[originalblockid\][\s\S]*?background:\s*var\(--cursor-text-6\)/,
+  "embedded blocks must use a translucent Cursor surface",
+);
+assert.match(
+  css,
   /\.block-editor[\s\S]*?border:\s*0\s*!important/,
   "block editors must remain borderless",
 );
